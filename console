@@ -1,0 +1,13 @@
+<?php
+
+[$SCRIPT_NAME, $COMMAND_NAME] = $argv;
+
+$arguments = array_splice($argv, 2);
+
+$command = match($COMMAND_NAME) {
+    'test' => 'php vendor/bin/phpunit',
+};
+
+$argument = array_shift($arguments);
+
+print shell_exec("{$command} {$argument}");

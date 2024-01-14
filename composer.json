@@ -1,0 +1,19 @@
+{
+    "name": "psolm/micro-phrame",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Psolm\\MicroPhrame\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pablo Jonhatan Solis Mendiola",
+            "email": "pablosolismendiola@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    }
+}
